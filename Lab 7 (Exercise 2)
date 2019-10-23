@@ -1,0 +1,24 @@
+// Exercise 2 (Lab 7)
+#include <iostream>
+using namespace std;
+void swap(float &x,float &y);//Function declaration
+
+int main()
+{
+  float x=10.2,y=79.8;
+  cout<<"The original value of x:"<<x<<endl;
+  cout<<"The original value of y:"<<y<<endl;
+  swap(x,y);
+  cout<<"The swap value of x in main():"<<x<<endl;
+  cout<<"The swap value of y in main():"<<y<<endl;
+  return 0;
+}
+void swap(float &x,float &y)//Define function
+{
+    float temp;
+    temp=y;
+    y=x;
+    x=temp;
+    cout<<"The swap value of x in main():"<<x<<endl;
+    cout<<"The swap value of y in main():"<<y<<endl;
+}
