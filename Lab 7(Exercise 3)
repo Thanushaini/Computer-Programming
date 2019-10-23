@@ -1,0 +1,25 @@
+// Exercise 3(Lab 7)
+#include <iostream>
+using namespace std;
+// Function declaration
+float kilometres_per_gallon(float,float);
+const float litres_per_gallon=0.264179;
+
+int main()
+{
+  float a,b;
+  cout<<" Enter the number of litres of petrol consumed by the user's car"<<endl;
+  cin>>a;
+  cout<<" Enter the number of kilometres travelled by the car"<<endl;
+  cin>>b;
+  cout<<kilometres_per_gallon(a,b)<<endl;
+  
+  return 0;
+}
+// define the function
+float kilometres_per_gallon(float a,float b)
+{
+    float kilometres_per_gallon;
+    kilometres_per_gallon=a/(b*litres_per_gallon);
+    return kilometres_per_gallon;
+}
